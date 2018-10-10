@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 本网页内容来自于：https://blog.csdn.net/juzipchy/article/details/54097852 详情请去原网页读取bootstrap框架知识详解-->
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link type="text/css" rel="styleSheet"  href="bootstrap/css/bootstrap.css"></link>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+
+<style>
+	body {
+  padding-top: 70px;/*有顶部固定导航条时设置*/
+  padding-bottom: 70px;/*有底部固定导航条时设置*/
+}
+</style>
+
+</head>
+<body>
+
+<div class="dropdown">
+<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+下拉菜单
+<span class="caret"></span>
+</button>
+<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+   <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项</a></li>
+   <li role="presentation" class="divider"></li>
+   <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项</a></li>
+</ul>
+</div>
+
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+  下拉菜单
+  <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu1">
+ <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项</a></li>
+   <li role="presentation" class="divider"></li>
+   <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项</a></li>
+  </ul>
+</div>
+
+
+<div class="btn-group">
+  <button type="button" class="btn btn-default">
+     <span class="glyphicon glyphicon-step-backward">上一曲</span>
+  </button>
+
+  <button type="button" class="btn btn-default">
+     <span class="glyphicon glyphicon-step-forward">下一曲</span>
+  </button>
+</div>
+
+<div class="btn-wrap">
+<div class="btn-group btn-group-justified">
+  <a class="btnbtn-default" href="#">首页</a>
+  <a class="btnbtn-default" href="#">产品展示</a>
+  <a class="btnbtn-default" href="#">案例分析</a>
+  <a class="btnbtn-default" href="#">联系我们</a>
+</div>
+</div>
+
+
+<div class="btn-group dropup">
+    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">按钮下拉菜单<span class="caret"></span></button>
+    <ul class="dropdown-menu">
+         <li><a href="##">按钮下拉菜单项</a></li>
+         <li><a href="##">按钮下拉菜单项</a></li>
+         <li><a href="##">按钮下拉菜单项</a></li>
+         <li><a href="##">按钮下拉菜单项</a></li>
+    </ul>
+</div>
+
+
+
+<ul class="nav nav-tabs">
+    <li class="active"><a href="##">Home</a></li>
+    <li><a href="##">CSS3</a></li>
+    <li><a href="##">Sass</a></li>
+    <li><a href="##">jQuery</a></li>
+    <li class="disabled"><a href="##">Responsive</a></li>
+ </ul>
+
+
+<ul class="nav nav-tabs nav-justified">
+     <li class="active"><a href="##">Home</a></li>
+     <li><a href="##">CSS3</a></li>
+     <li><a href="##">Sass</a></li>
+     <li><a href="##">jQuery</a></li>
+     <li><a href="##">Responsive</a></li>
+</ul>
+
+
+<ol class="breadcrumb">
+  <li><a href="#">首页</a></li>
+  <li><a href="#">我的书</a></li>
+  <li class="active">《图解CSS3》</li>
+</ol>
+
+
+<div class="navbar navbar-default" role="navigation">
+     <ul class="nav navbar-nav">
+        <li class="active"><a href="##">网站首页</a></li>
+        <li><a href="##">系列教程</a></li>
+        <li><a href="##">名师介绍</a></li>
+        <li><a href="##">成功案例</a></li>
+        <li><a href="##">关于我们</a></li>
+     </ul>
+</div>
+
+
+<div class="navbar navbar-default" role="navigation">
+  　<div class="navbar-header">
+  　    <a href="##" class="navbar-brand">桔子网</a>
+  　</div>
+    <ul class="nav navbar-nav">
+        <li class="active"><a href="##">网站首页</a></li>
+        <li class="dropdown">
+          <a href="##" data-toggle="dropdown" class="dropdown-toggle">系列教程<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="##">CSS3</a></li>
+            <li><a href="##">JavaScript</a></li>
+            <li class="disabled"><a href="##">PHP</a></li>
+          </ul>
+       </li>
+       <li><a href="##">名师介绍</a></li>
+       <li><a href="##">成功案例</a></li>
+       <li><a href="##">关于我们</a></li>
+    </ul>
+</div>
+
+
+
+<div class="navbar navbar-default" role="navigation">
+  　<div class="navbar-header">
+  　    <a href="##" class="navbar-brand">桔子网</a>
+  　</div>
+    <ul class="nav navbar-nav">
+       <li class="active"><a href="##">网站首页</a></li>
+       <li class="dropdown">
+          <a href="##" data-toggle="dropdown" class="dropdown-toggle">系列教程<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="##">CSS3</a></li>
+            <li><a href="##">JavaScript</a></li>
+            <li class="disabled"><a href="##">PHP</a></li>
+          </ul>
+      </li>
+      <li><a href="##">名师介绍</a></li>
+      <li><a href="##">成功案例</a></li>
+      <li><a href="##">关于我们</a></li>
+     </ul>
+     <form action="##" class="navbar-form navbar-left" rol="search">
+        <div class="form-group">
+           <input type="text" class="form-control" placeholder="请输入关键词" />
+        </div>
+        <button type="submit" class="btn btn-default">搜索</button>
+     </form>
+</div>
+
+
+<div class="navbar navbar-default" role="navigation">
+  　<div class="navbar-header">
+  　    <a href="##" class="navbar-brand">慕课网</a>
+  　</div>
+     <div class="nav navbar-nav">
+        <a href="##" class="navbar-text">Navbar Text</a>
+        <a href="##" class="navbar-text">Navbar Text</a>
+        <a href="##" class="navbar-text">Navbar Text</a>
+     </div>
+</div>
+
+
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  　<div class="navbar-header">
+  　    <a href="##" class="navbar-brand">桔子网</a>
+  　</div>
+     <ul class="nav navbar-nav">
+        <li class="active"><a href="##">网站首页</a></li>
+        <li><a href="##">系列教程</a></li>
+        <li><a href="##">名师介绍</a></li>
+        <li><a href="##">成功案例</a></li>
+        <li><a href="##">关于我们</a></li>
+     </ul>
+</div>
+
+
+<div class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+        　<!-- .navbar-toggle样式用于toggle收缩的内容，即nav-collapse collapse样式所在元素 -->
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar">a</span>
+            <span class="icon-bar">b</span>
+            <span class="icon-bar">c</span>
+        </button>
+        <!-- 确保无论是宽屏还是窄屏，navbar-brand都显示 -->
+        <a href="##" class="navbar-brand">桔子网</a>
+    </div>
+    <!-- 屏幕宽度小于768px时，div.navbar-responsive-collapse容器里的内容都会隐藏，显示icon-bar图标，当点击icon-bar图标时，再展开。屏幕大于768px时，默认显示。 -->
+    <div class="collapse navbar-collapse navbar-responsive-collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="##">网站首页</a></li>
+            <li><a href="##">系列教程</a></li>
+            <li><a href="##">名师介绍</a></li>
+            <li><a href="##">成功案例</a></li>
+            <li><a href="##">关于我们</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6 col-md-3">
+            <a href="#" class="thumbnail">
+                <img src="http://img.mukewang.com/5434eba100014fe906000338.png" style="height: 180px; width: 100%; display: block;" alt="">
+            </a>
+            <div class="caption">
+                <h3>Bootstrap框架系列教程</h3>
+                <p>Bootstrap框架是一个优秀的前端框，就算您是一位后端程序员或者你是一位不懂设计的前端人员，你也能依赖于Bootstrap制作做优美的网站...</p>
+                <p>
+                    <a href="##" class="btn btn-primary">开始学习</a>
+                    <a href="##" class="btn btn-info">正在学习</a>
+                </p>
+            </div>  
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <a href="#" class="thumbnail">
+                <img alt="100%x180" src="http://img.mukewang.com/5434eba100014fe906000338.png" style="height: 180px; width: 100%; display: block;">
+            </a>
+            <div class="caption">
+                <h3>Bootstrap框架系列教程</h3>
+                <p> Bootstrap框架是一个优秀的前端框，就算您是一位后端程序员或者你是一位不懂设计的前端人员，你也能依赖于Bootstrap制作做优美的网站...</p>
+                <p>
+                    <a href="##" class="btn btn-primary">开始学习</a>
+                    <a href="##" class="btn btn-info">正在学习</a>
+                </p>
+            </div>   
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <a href="#" class="thumbnail">
+                <img alt="100%x180" src="http://img.mukewang.com/5434eba100014fe906000338.png" style="height: 180px; width: 100%; display: block;">
+            </a>
+            <div class="caption">
+                <h3>Bootstrap框架系列教程</h3>
+                    <p>Bootstrap框架是一个优秀的前端框，就算您是一位后端程序员或者你是一位不懂设计的前端人员，你也能依赖于Bootstrap制作做优美的网站...</p>
+                    <p>
+                        <a href="##" class="btn btn-primary">开始学习</a>
+                        <a href="##" class="btn btn-info">正在学习</a>
+                    </p>
+            </div>   
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <a href="#" class="thumbnail">
+                <img alt="100%x180" src="http://img.mukewang.com/5434eba100014fe906000338.png" style="height: 180px; width: 100%; display: block;">
+            </a>
+            <div class="caption">
+                <h3>Bootstrap框架系列教程</h3>
+                <p>Bootstrap框架是一个优秀的前端框，就算您是一位后端程序员或者你是一位不懂设计的前端人员，你也能依赖于Bootstrap制作做优美的网站...</p>
+                <p>
+                    <a href="##" class="btn btn-primary">开始学习</a>
+                    <a href="##" class="btn btn-info">正在学习</a>
+                </p>
+            </div>   
+        </div>
+    </div>
+</div>
+
+
+<div class="alert alert-success alert-dismissable" role="alert">
+    <button class="close" type="button" data-dismiss="alert">&times;</button>
+    恭喜您操作成功！
+</div>
+
+
+<div class="progress">
+       <div class="progress-bar" style="width:40%"></div>
+</div>
+
+
+<div class="progress progress-striped active">
+    <div class="progress-bar progress-bar-success" style="width:80%"></div>
+</div>
+
+
+<div class="progress">
+    <div class="progress-bar progress-bar-success"  role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%">20%</div>
+</div>
+
+
+<div class="media">
+    <a class="pull-left" href="#">
+        <img class="media-object" src="http://img.mukewang.com/52e1d29d000161fe06000338-300-170.jpg" alt="...">
+    </a>
+    <div class="media-body">
+        <h4 class="media-heading">系列：十天精通CSS3</h4>
+        <div>全方位深刻详解CSS3模块知识，经典案例分析，代码同步调试，让网页穿上绚丽装备！</div>
+    </div>
+</div>
+
+
+<ul class="media-list">
+    <li class="media">
+        <a class="pull-left" href="#">
+            <img class="media-object" src="http://img.mukewang.com/52e1d29d000161fe06000338-300-170.jpg" alt="...">
+        </a>
+        <div class="media-body">
+            <h4 class="media-heading">Media Header</h4>
+            <div>…</div>
+        </div>
+    </li>
+    <li class="media">…</li>
+    <li class="media">…</li>
+</ul>
+
+
+
+<ul class="list-group">
+    <li class="list-group-item">揭开CSS3的面纱</li>
+    <li class="list-group-item">CSS3选择器</li>
+    <li class="list-group-item">CSS3边框</li>
+    <li class="list-group-item">CSS3背景</li>
+    <li class="list-group-item">CSS3文本</li>
+</ul>
+
+
+
+<div class="list-group">
+    <a href="##" class="list-group-item">
+        <h4 class="list-group-item-heading">图解CSS3</h4>
+        <p class="list-group-item-text">...</p>
+    </a>
+    <a href="##" class="list-group-item">
+        <h4 class="list-group-item-heading">Sass中国</h4>
+        <p class="list-group-item-text">...</p>
+    </a>
+</div>
+
+
+<div class="panel panel-default">
+    <div class="panel-heading">图解CSS3</div>
+    <div class="panel-body">…</div>
+    <div class="panel-footer">作者：大漠</div>
+</div>
+
+
+
+<!-- div class="modal show">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">模态弹出窗标题</h4>
+            </div>
+            <div class="modal-body">
+                <p>模态弹出窗主体内容</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">保存</button>
+            </div>
+        </div>/.modal-content
+    </div>/.modal-dialog
+</div>/.modal
+
+ -->
+
+
+
+<button class="btn btn-primary" data-toggle="modal" data-target="#mymodal-data" type="button">通过data-target触发</button>
+<!-- 模态弹出窗内容 -->
+<div class="modal" id="mymodal-data" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">模态弹出窗标题</h4>
+            </div>
+            <div class="modal-body">
+                <p>模态弹出窗主体内容</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">保存</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- 触发模态弹出窗的元素 -->
+<button type="button" data-toggle="modal" data-target="#mymodal" class="btn btn-primary">点击我会弹出模态弹出窗</button>
+<!-- 模态弹出窗 -->
+<div class="modal fade" id="mymodal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <!-- 模态弹出窗内容 -->
+        		写内容
+        </div>
+    </div>
+</div>
+
+
+<!-- 触发模态弹出窗的元素 -->
+<a data-toggle="modal" href="#mymodal" class=" btn btn-primary" >点击我会弹出模态弹出窗</a>
+<!-- 模态弹出窗 -->
+<div class="modal fade"  id="mymodal" >
+    <div class="modal-dialog" >
+        <div class="modal-content" >
+        <!-- 模态弹出窗内容 -->
+        	写内容
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
